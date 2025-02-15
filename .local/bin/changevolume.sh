@@ -2,7 +2,7 @@
 
 function send_notification() {
 	volume=$(pamixer --get-volume)
-	dunstify -i ~/.config/dunst/icons/player-volume.svg -a "changevolume" -u normal -r "9993" -h int:value:"$volume" "Volume: ${volume}%" -t 2000
+	dunstify -i ~/.local/share/dunst/icons/player-volume.svg -a "changevolume" -u normal -r "9993" -h int:value:"$volume" "Volume: ${volume}%" -t 2000
 }
 
 case $1 in
@@ -25,7 +25,7 @@ down)
 mute)
 	pamixer -t
 	if $(pamixer --get-mute); then
-		dunstify -i ~/.config/dunst/icons/player-volume-muted.svg -a "changevolume" -t 2000 -r 9993 -u low "Sound muted!"
+		dunstify -i ~/.local/share/dunst/icons/player-volume-muted.svg -a "changevolume" -t 2000 -r 9993 -u low "Sound muted!"
 	else
 		send_notification up
 	fi
