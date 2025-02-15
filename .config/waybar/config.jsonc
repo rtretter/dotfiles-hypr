@@ -1,0 +1,60 @@
+{
+    "layer": "top",
+    "spacing": 0,
+    "height": 0,
+
+    "margin-top": 8,
+    "margin-right": 8,
+    "margin-bottom": 0,
+    "margin-left": 8,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "cpu_text",
+        "cpu",
+        "memory"
+    ],
+
+    "hyprland/workspaces": {
+        "all-outputs": true,
+	"persistent-workspaces": {
+            "DP-1": [
+                1
+            ],
+            "HDMI-A-1": [
+                6
+            ]
+	}
+    },
+
+    "clock": {
+        // "format": "{:%I:%M %p - %a, %d %b %Y}",
+        "format": "{:%H:%M @ %a, %d %b %Y}",
+        "tooltip": false
+    },
+
+    "cpu": {
+        "format": "cpu {usage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 90
+        }
+    },
+
+    "memory": {
+        "format": "mem {percentage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 80
+        }
+    }
+}
