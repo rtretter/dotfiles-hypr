@@ -1,0 +1,112 @@
+/*
+ *
+ * Colors are defined here and used throughout the CSS
+ *
+ */
+@define-color transparent rgba(0, 0, 0, 0);
+@define-color bg-color rgba(0, 0, 0, 1);
+@define-color bg-color-transparent rgba(0, 0, 0, 0.5);
+@define-color primary rgba(105, 224, 137, 1);
+@define-color primary-bright rgba(224, 255, 233, 1);
+@define-color white rgba(255, 255, 255, 1);
+@define-color black rgba(0, 0, 0, 1);
+
+* {
+  transition: 0.2s;
+}
+
+window {
+	font-family: "Iosevka Nerd Font Mono";
+	font-size: 16px;
+}
+
+window {
+    margin: 0px;
+    border: 2px solid @primary;
+    background-color: @bg-color-transparent;
+    border-radius: 32px;
+}
+
+#input {
+    padding: 4px;
+    margin: 20px;
+    padding-left: 20px;
+    border: none;
+    color: @black;
+    font-weight: bold;
+    background: linear-gradient(90deg, @primary 0%, @primary-bright 100%);
+   	outline: none;
+    border-radius: 32px;
+    caret-color: @black;
+    box-shadow: none;
+}
+
+#input::placeholder {
+    color: red;
+}
+
+#input image {
+    color: @black;
+}
+
+#inner-box {
+    margin: 20px;
+    margin-top: 0px;
+    border: none;
+    color: @primary;
+    border-radius: 32px;
+}
+
+#inner-box * {
+    transition: none;
+}
+
+#outer-box {
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    border-radius: 32px;
+}
+
+#scroll {
+    margin-top: 5px;
+    border: none;
+    border-radius: 32px;
+    margin-bottom: 5px;
+}
+
+#text:selected {
+    color: @black;
+    font-weight: bold;
+}
+
+#img {
+    margin-right: 20px;
+    background: transparent;
+}
+
+#text {
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    background: transparent;
+}
+
+#entry {
+    margin: 0px;
+    padding-left: 8px;
+    border: none;
+    border-radius: 32px;
+    background-color: transparent;
+    min-height:32px;
+    font-weight: bold;
+}
+
+#entry:selected {
+    outline: none;
+    margin: 0px;
+    padding-left: 8px;
+    border: none;
+    border-radius: 32px;
+    background: linear-gradient(90deg, @primary 0%, @primary-bright 100%);
+}

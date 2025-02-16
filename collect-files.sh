@@ -1,6 +1,6 @@
 #!/bin/bash
 
-configs=("dunst" "hypr" "kitty" "nvim" "waybar")
+configs=("dunst" "hypr" "kitty" "nvim" "waybar" "wofi")
 
 rm -rf .config
 mkdir .config
