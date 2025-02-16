@@ -20,3 +20,6 @@ cp -r ~/.local/share/dunst .local/share/dunst
 
 rm -rf wallpapers
 cp -r /usr/share/wallpapers wallpapers
+
+cp ~/.bashrc .
+cp ~/.inputrc .
