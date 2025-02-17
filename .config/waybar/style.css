@@ -39,7 +39,7 @@ tooltip label {
 #clock,
 #tray,
 #cpu,
-#pulseaudio,
+#wireplumber,
 #memory,
 
 #workspaces {
@@ -80,7 +80,7 @@ tooltip label {
     border-radius: 32px;
 }
 
-#pulseaudio,
+#wireplumber,
 #cpu,
 #memory{
     background-color: @bg-color;
