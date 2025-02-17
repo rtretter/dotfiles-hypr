@@ -39,6 +39,7 @@ tooltip label {
 #clock,
 #tray,
 #cpu,
+#pulseaudio,
 #memory,
 
 #workspaces {
@@ -79,6 +80,7 @@ tooltip label {
     border-radius: 32px;
 }
 
+#pulseaudio,
 #cpu,
 #memory{
     background-color: @bg-color;

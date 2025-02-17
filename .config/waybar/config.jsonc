@@ -17,25 +17,32 @@
     ],
 
     "modules-right": [
-        "cpu_text",
+        "tray",
+        "pulseaudio",
         "cpu",
         "memory"
     ],
 
     "hyprland/workspaces": {
         "all-outputs": true,
-	"persistent-workspaces": {
+        "persistent-workspaces": {
             "DP-1": [
                 1
             ],
             "HDMI-A-1": [
                 6
             ]
-	}
+        }
+    },
+    
+    "pulseaudio": {
+        "format": "vol {volume}%",
+        "max-volume": 150,
+        "on-click": "pavucontrol"
     },
 
     "clock": {
-        // "format": "{:%I:%M %p - %a, %d %b %Y}",
+        //  "format": "{:%I:%M %p - %a, %d %b %Y}",
         "format": "{:%H:%M @ %a, %d %b %Y}",
         "tooltip": false
     },
