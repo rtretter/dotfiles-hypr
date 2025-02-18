@@ -28,5 +28,10 @@ cp -r /usr/share/wallpapers wallpapers
 cp ~/.bashrc .
 cp ~/.inputrc .
 
+cp /etc/sddm.conf.d/config.conf ./sddm.conf
+rm -rf sddm-themes
+mkdir sddm-themes
+cp -r /usr/share/sddm/themes/* sddm-themes/
+
 pacman -Qqen > pkglist.txt
 pacman -Qqem > foreignpkglist.txt
