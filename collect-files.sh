@@ -1,4 +1,8 @@
 #!/bin/bash
+cd "$(dirname "$0")"
+
+echo "Running in: $(pwd)!"
+read -p "Press any key to continue..." -sn 1
 
 configs=("dunst" "hypr" "kitty" "nvim" "waybar" "wofi" "pipewire")
 
@@ -23,3 +27,6 @@ cp -r /usr/share/wallpapers wallpapers
 
 cp ~/.bashrc .
 cp ~/.inputrc .
+
+pacman -Qqen > pkglist.txt
+pacman -Qqem > foreignpkglist.txt
