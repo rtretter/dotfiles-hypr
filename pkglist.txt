@@ -46,5 +46,11 @@ tealdeer
 ttf-iosevka-nerd
 unzip
 waybar
+wine
+wine-gecko
+wine-mono
+winetricks
 wl-clipboard
 wofi
+xdg-desktop-portal-hyprland
+zenity
