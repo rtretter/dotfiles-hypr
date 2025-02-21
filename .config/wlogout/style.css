@@ -1,0 +1,85 @@
+/*
+ *
+ * Colors are defined here and used throughout the CSS
+ *
+ */
+@define-color transparent rgba(0, 0, 0, 0);
+@define-color bg-color rgba(0, 0, 0, 1);
+@define-color bg-color-transparent rgba(0, 0, 0, 0.5);
+@define-color primary-transparent rgba(105, 224, 137, 0.3);
+@define-color primary rgba(105, 224, 137, 1);
+@define-color primary-bright rgba(224, 255, 233, 1);
+@define-color urgent rgba(225, 105, 105, 1);
+@define-color white rgba(255, 255, 255, 1);
+
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: @bg-color-transparent;
+}
+
+button {
+    border-radius: 32px;
+    margin: 16px;
+    font-size: 42px;
+    font-family: "Iosevka Nerd Font";
+    font-style: italic;
+    color: @white;
+	background-color: @bg-color-transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40%;
+    border: none;
+}
+
+button:focus, button:active {
+	background-color: @primary-transparent;
+    color: @white;
+    outline-style: none;
+}
+
+button:hover {
+	background-color: @primary;
+    color: @bg-color;
+    font-style: normal;
+	outline-style: none;
+}
+
+#shutdown {
+    background-image: image(url("/home/robin/.local/share/wlogout/icons/shutdown-white.svg"), url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#shutdown:hover {
+    background-image: image(url("/home/robin/.local/share/wlogout/icons/shutdown.svg"), url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("/home/robin/.local/share/wlogout/icons/reboot-white.svg"), url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}
+
+#reboot:hover {
+    background-image: image(url("/home/robin/.local/share/wlogout/icons/reboot.svg"), url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}
+
+#logout {
+    background-image: image(url("/home/robin/.local/share/wlogout/icons/logout-white.svg"), url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#logout:hover {
+    background-image: image(url("/home/robin/.local/share/wlogout/icons/logout.svg"), url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#lock {
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#suspend {
+    background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+}

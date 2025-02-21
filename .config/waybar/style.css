@@ -8,6 +8,7 @@
 @define-color bg-color-transparent rgba(0, 0, 0, 0.5);
 @define-color primary rgba(105, 224, 137, 1);
 @define-color primary-bright rgba(224, 255, 233, 1);
+@define-color secondary rgba(247, 161, 62, 1);
 @define-color urgent rgba(225, 105, 105, 1);
 @define-color white rgba(255, 255, 255, 1);
 
@@ -36,14 +37,23 @@ tooltip label {
     color: @white;
 }
 
-#clock,
-#tray,
-#cpu,
-#wireplumber,
-#memory,
+#image {
+    margin: 6px 6px 6px 8px;
+    padding: 4px 16px;
+    border-radius: 32px;
+    background-color: @primary;
+}
+
+#image:hover {
+    background-color: @secondary;
+}
+
+#clock {
+    margin: 6px 0px 6px 3px;
+}
 
 #workspaces {
-    margin: 6px 0px 6px 6px;
+    margin: 6px 0px 6px 24px;
 }
 
 #workspaces button {
@@ -73,6 +83,11 @@ tooltip label {
     color: @bg-color;
 }
 
+#workspaces button:hover {
+    background-color: @secondary;
+    color: @bg-color;
+}
+
 #clock {
     background-color: @bg-color;
     color: @primary;
@@ -80,12 +95,13 @@ tooltip label {
     border-radius: 32px;
 }
 
+#tray,
 #wireplumber,
 #cpu,
 #memory{
     background-color: @bg-color;
     color: @primary;
-    margin-right: 8px;
+    margin: 6px 8px 6px 0px;
     padding: 4px 16px;
     border-radius: 32px;
 }

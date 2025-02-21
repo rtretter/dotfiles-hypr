@@ -4,7 +4,7 @@ cd "$(dirname "$0")"
 echo "Running in: $(pwd)!"
 read -p "Press any key to continue..." -sn 1
 
-configs=("dunst" "hypr" "kitty" "nvim" "waybar" "wofi" "pipewire")
+configs=("dunst" "hypr" "kitty" "nvim" "waybar" "wofi" "pipewire" "wlogout")
 
 rm -rf .config
 mkdir .config
@@ -21,6 +21,7 @@ mkdir -p .local/share
 
 cp -r ~/.local/bin .local/bin
 cp -r ~/.local/share/dunst .local/share/dunst
+cp -r ~/.local/share/wlogout .local/share/wlogout
 
 rm -rf wallpapers
 cp -r /usr/share/wallpapers wallpapers

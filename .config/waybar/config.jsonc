@@ -9,6 +9,7 @@
     "margin-left": 8,
 
     "modules-left": [
+        "image",
         "hyprland/workspaces"
     ],
 
@@ -23,22 +24,23 @@
         "memory"
     ],
 
+    "image": {
+        "path": "/home/robin/.local/share/wlogout/icons/shutdown.svg",
+        "size": 20,
+        "on-click": "wlogout -P 1"
+    },
+
     "hyprland/workspaces": {
-        "all-outputs": true,
-        "persistent-workspaces": {
-            "DP-1": [
-                1
-            ],
-            "HDMI-A-1": [
-                6
-            ]
-        }
+        "all-outputs": true
     },
     
     "wireplumber": {
-        "format": "vol {volume}%",
+        "format": "󰕾  {volume}%",
+        "format-muted": "  muted",
         "max-volume": 150,
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol",
+        "on-scroll-up": "~/.local/bin/changevolume.sh up",
+        "on-scroll-down": "~/.local/bin/changevolume.sh down"
     },
 
     "clock": {
@@ -48,7 +50,7 @@
     },
 
     "cpu": {
-        "format": "cpu {usage}%",
+        "format": "  {usage}%",
         "interval": 2,
 
         "states": {
@@ -57,7 +59,7 @@
     },
 
     "memory": {
-        "format": "mem {percentage}%",
+        "format": "  {percentage}%",
         "interval": 2,
 
         "states": {

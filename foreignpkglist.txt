@@ -3,3 +3,4 @@ adwaita-qt6-git
 paru
 paru-debug
 sddm-git
+wlogout

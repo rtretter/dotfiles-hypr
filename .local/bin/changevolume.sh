@@ -18,9 +18,16 @@ up)
 	send_notification $1
 	;;
 down)
-	pamixer -u
-	pamixer -d 5 --allow-boost
-	send_notification $1
+	volume=$(pamixer --get-volume)
+	if (($volume <= 5)); then
+		pamixer --set-volume 0
+		pamixer -m
+		dunstify -i ~/.local/share/dunst/icons/player-volume-muted.svg -a "changevolume" -t 2000 -r 9993 -u low "Sound muted!"
+	else
+        pamixer -u
+        pamixer -d 5 --allow-boost
+        send_notification $1
+	fi
 	;;
 mute)
 	pamixer -t
