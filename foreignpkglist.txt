@@ -1,6 +1,8 @@
 adwaita-qt5-git
 adwaita-qt6-git
+librewolf-bin
 paru
 paru-debug
 sddm-git
 wlogout
+yaak

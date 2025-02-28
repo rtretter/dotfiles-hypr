@@ -2,7 +2,7 @@
 
 function send_notification() {
 	volume=$(pamixer --get-volume)
-	dunstify -i ~/.local/share/dunst/icons/player-volume.svg -a "changevolume" -u normal -r "9993" -h int:value:"$volume" "Volume: ${volume}%" -t 2000
+	dunstify -i ~/.local/share/dunst/icons/player-volume.svg -a "changevolume" -u normal -r 9993 -h int:value:"$volume" "Volume: ${volume}%" -t 2000
 }
 
 case $1 in
