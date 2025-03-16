@@ -22,7 +22,7 @@ lsp_zero.setup()
 -- here you can setup the language servers 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {"rust_analyzer", "lua_ls", "bashls", "gopls"},
+  ensure_installed = {"rust_analyzer", "lua_ls", "bashls"},
   handlers = {
     lsp_zero.default_setup,
   },

@@ -1,6 +1,5 @@
 adw-gtk-theme
 alsa-firmware
-alsa-lib
 alsa-utils
 amd-ucode
 audacity
@@ -9,6 +8,7 @@ base-devel
 cifs-utils
 discord
 dunst
+efibootmgr
 git
 gnome-themes-extra
 grim
@@ -17,6 +17,7 @@ kitty
 layer-shell-qt
 layer-shell-qt5
 libnotify
+libpulse
 linux
 linux-firmware
 linux-headers
@@ -31,10 +32,10 @@ noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
 npm
-nvidia-dkms
 openssh
 pamixer
 pavucontrol
+pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
@@ -56,6 +57,7 @@ wine
 wine-gecko
 wine-mono
 winetricks
+wireplumber
 wl-clipboard
 wofi
 xdg-desktop-portal-hyprland

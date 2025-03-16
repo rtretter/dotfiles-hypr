@@ -27,7 +27,7 @@
     "image": {
         "path": "/home/robin/.local/share/wlogout/icons/shutdown.svg",
         "size": 20,
-        "on-click": "wlogout -P 1"
+        "on-click": "wlogout -P 0"
     },
 
     "hyprland/workspaces": {

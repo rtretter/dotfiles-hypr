@@ -5,4 +5,4 @@ paru
 paru-debug
 sddm-git
 wlogout
-yaak
+yaak-bin
