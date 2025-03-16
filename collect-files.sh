@@ -29,7 +29,8 @@ cp -r /usr/share/wallpapers wallpapers
 cp ~/.bashrc .
 cp ~/.inputrc .
 
-cp /etc/sddm.conf.d/config.conf ./sddm.conf
+cp /etc/sddm.conf.d/sddm.conf ./sddm.conf
+cp /usr/share/sddm/scripts/Xsetup ./Xsetup
 rm -rf sddm-themes
 mkdir sddm-themes
 cp -r /usr/share/sddm/themes/* sddm-themes/

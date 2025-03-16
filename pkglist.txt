@@ -61,4 +61,5 @@ wireplumber
 wl-clipboard
 wofi
 xdg-desktop-portal-hyprland
+xorg-xrandr
 zenity
