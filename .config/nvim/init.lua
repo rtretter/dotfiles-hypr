@@ -1,1 +1,2 @@
-require("core")
+require("rtretter.core")
+require("rtretter.lazy")

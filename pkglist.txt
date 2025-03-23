@@ -11,6 +11,7 @@ dunst
 efibootmgr
 git
 gnome-themes-extra
+go
 grim
 hyprland
 kitty
